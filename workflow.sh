@@ -14,7 +14,7 @@ then
 
 	R CMD BATCH main.r 
 
-	git add -A 
+	git add .
 
 	git commit -m 'auto_git'
 
