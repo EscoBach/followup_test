@@ -12,6 +12,8 @@ then
 	#printf "Log File - " > $log
 	#date >> $log
 
+	git pull
+
 	R CMD BATCH main.r 
 
 	git add .
