@@ -4,9 +4,9 @@ cd followup_test/
 
 git fetch
 
-BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+COMMIT=$(git rev-list --right-only --count HEAD...origin/main)
 
-if test "$BRANCH" != "main"
+if test $COMMIT > 0
 then
 
 	#create log file

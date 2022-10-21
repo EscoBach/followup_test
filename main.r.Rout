@@ -17,16 +17,17 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
-[Previously saved workspace restored]
-
+> data1<-rnorm(100)
 > 
-> print('Hello World')
-[1] "Hello World"
+> bi<-mean(data1)
 > 
-> r <- runif(100)
+> sdd<-sd(data1)
 > 
-> save(r,file='save/save.rdata')
+> out<-data.frame(bi,sdd)
+> 
+> save(out,file='save/save.rdata')
+> write.table(out,file="save/Ni.csv",sep = ",")
 > 
 > proc.time()
    user  system elapsed 
-  0.115   0.025   0.121 
+  0.121   0.018   0.120 
