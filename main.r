@@ -1,6 +1,5 @@
+data1<-rnorm(100)
+bi<-mean(data1);sdd<-sd(data1)
+out<-data.frame(bi,sdd)
 
-print('Hello World')
-
-r <- runif(100)
-
-save(r,file='save/save.rdata')
+save(out,file='save/save.rdata')
