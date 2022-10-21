@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd followup_test/
+
 git fetch
 
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
