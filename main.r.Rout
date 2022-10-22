@@ -27,9 +27,6 @@ Type 'q()' to quit R.
 > 
 > out<-data.frame(bi,sdd)
 > 
-> print(proc.time())
-   user  system elapsed 
-  0.123   0.021   0.125 
 > Sys.sleep(120)
 > 
 > save(out,file='save/save.rdata')
@@ -37,4 +34,4 @@ Type 'q()' to quit R.
 > 
 > proc.time()
    user  system elapsed 
-  0.125   0.022 120.228 
+  0.117   0.025 120.224 
