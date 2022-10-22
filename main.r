@@ -6,7 +6,6 @@ sdd<-sd(data1)
 
 out<-data.frame(bi,sdd)
 
-print(proc.time())
 Sys.sleep(120)
 
 save(out,file='save/save.rdata')
