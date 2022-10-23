@@ -6,7 +6,7 @@ git fetch
 
 COMMIT=$(git rev-list --right-only --count HEAD...origin/main)
 
-if test $COMMIT > 0
+if [$COMMIT -g 0]
 then
 
 	#create log file
