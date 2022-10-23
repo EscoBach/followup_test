@@ -17,6 +17,8 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 
+[Previously saved workspace restored]
+
 > data1<-rnorm(100)
 > 
 > bi<-mean(data1)
@@ -25,11 +27,11 @@ Type 'q()' to quit R.
 > 
 > out<-data.frame(bi,sdd)
 > 
-> Sys.sleep(120)
+> Sys.sleep(60)
 > 
 > save(out,file='save/save.rdata')
 > write.table(out,file="save/Ni.csv",sep = ",")
 > 
 > proc.time()
    user  system elapsed 
-  0.119   0.027 120.228 
+  0.125   0.017  60.185 
