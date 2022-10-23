@@ -27,11 +27,11 @@ Type 'q()' to quit R.
 > 
 > out<-data.frame(bi,sdd)
 > 
-> Sys.sleep(100)
+> Sys.sleep(80)
 > 
 > save(out,file='save/save.rdata')
 > write.table(out,file="save/Ni.csv",sep = ",")
 > 
 > proc.time()
    user  system elapsed 
-  0.121   0.025 100.160 
+  0.118   0.031  80.211 
