@@ -6,7 +6,7 @@ sdd<-sd(data1)
 
 out<-data.frame(bi,sdd)
 
-Sys.sleep(120)
+Sys.sleep(60)
 
 save(out,file='save/save.rdata')
 write.table(out,file="save/Ni.csv",sep = ",")
